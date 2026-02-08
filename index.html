@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <!-- Google verification -->
+    <meta name="google-site-verification" content="y7EYyY__yM-Q7RhOjeBtItIEG3-bopdfZr-TmNr8b8s" />
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030014" />
+
+    <!-- SEO: Title & Description -->
+    <title>Aura | High-Performance Web Design & Development</title>
+    <meta name="description" content="Aura Webs is a web design and development agency creating high-performance, SEO-optimized websites that help businesses attract clients and grow online." />
+    <meta name="keywords" content="web design, web development, SEO, agency, react, digital experiences, frontend, ui/ux" />
+    <meta name="author" content="AuraWebs" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aurawebs.site/" />
+    <meta property="og:title" content="Aura | High-Performance Web Design & Development" />
+    <meta property="og:description" content="Aura Webs is a web design and development agency creating high-performance, SEO-optimized websites that help businesses attract clients and grow online." />
+    <meta property="og:image" content="https://i.imgur.com/LyN2afy.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aurawebs.site/" />
+    <meta property="twitter:title" content="Aura | High-Performance Web Design & Development" />
+    <meta property="twitter:description" content="Aura Webs is a web design and development agency creating high-performance, SEO-optimized websites that help businesses attract clients and grow online." />
+    <meta property="twitter:image" content="https://i.imgur.com/LyN2afy.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="novamodel.png" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Paytone+One&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Paytone One', 'sans-serif'],
+            },
+            colors: {
+              aura: {
+                bg: '#030014', // Very deep purple/black
+                card: '#0f0728', // Slightly lighter for cards
+                purple: '#7c3aed',
+                violet: '#8b5cf6',
+                magenta: '#d946ef',
+                cyan: '#06b6d4',
+              }
+            },
+            animation: {
+              'gradient-x': 'gradient-x 8s ease infinite',
+              'blob': 'blob 20s infinite',
+              'blob-slow': 'blob 25s infinite',
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+              'pulse-glow': 'pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'cursor-blink': 'cursor-blink 1s step-end infinite',
+            },
+            keyframes: {
+              'gradient-x': {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                },
+              },
+              'blob': {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(50px, -60px) scale(1.1)' },
+                '66%': { transform: 'translate(-30px, 40px) scale(0.95)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              'float': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'pulse-glow': {
+                '0%, 100%': { opacity: '1', boxShadow: '0 0 20px rgba(124, 58, 237, 0.5)' },
+                '50%': { opacity: '.8', boxShadow: '0 0 40px rgba(139, 92, 246, 0.8)' },
+              },
+              'cursor-blink': {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #030014;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #030014;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #331c5e;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4c1d95;
+      }
+      .glass-panel {
+        background: rgba(15, 7, 40, 0.3);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
